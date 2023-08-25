@@ -134,22 +134,42 @@ ul li.check::before{
 
 
 @media(max-width : 450px){
+    body{
+        width: 100%;
+    }
     #toDoBox{
-        width: 18rem;
+        width: 16rem;
     }  
     
     ul li span{
-        left: 20rem;
+        left: 18rem;
     }
 }
 
 
 @media(max-width : 380px){
+    body{
+        width: 100%;
+    }
+
     #toDoBox{
-        width: 15rem;
+        width: 14rem;
     }  
     
     ul li span{
-        left: 18rem;
+        left: 16rem;
+    }
+}
+
+@media(max-width : 330px){
+    body{
+        width: 100%;
+    }
+    #toDoBox{
+        width: 10rem;
+    }  
+    
+    ul li span{
+        left: 12rem;
     }
 }
