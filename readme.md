@@ -9,7 +9,6 @@ Welcome to TaskMaster, Todo website that empowers you to manage your tasks and s
 - [Introduction](#introduction)
 - [Features](#features)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -34,10 +33,7 @@ We welcome contributions to enhance TaskMaster. To contribute:
 3. Make your enhancements or fixes.
 4. Submit a pull request detailing your changes.
 
-## License
-
-TaskMaster is released under the [MIT License](LICENSE), granting you the freedom to use, modify, and distribute the software.
 
 ---
 
-Thank you for choosing TaskMaster for your task management needs. If you encounter any issues or have suggestions, feel free to [open an issue](https://github.com/your-username/taskmaster/issues). Happy tasking!
+Thank you for choosing TaskMaster for your task management needs. If you encounter any issues or have suggestions, feel free to [open an issue](https://github.com/Devanshu78/To-Do-App/issues). Happy tasking!
