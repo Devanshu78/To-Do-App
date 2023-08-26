@@ -1,10 +1,9 @@
 const addButton = document.querySelector('.addButton');
 let inputBox = document.getElementById('toDoBox');
 let listContainer = document.querySelector('.list-container');
- 
-addButton.addEventListener('click', () => {
+let count = 0; 
 
-    // e.preventDefault;
+addButton.addEventListener('click', () => {
 
     if(inputBox.value === " " || inputBox.value == ""){
         alert('enter your task first')
@@ -14,13 +13,26 @@ addButton.addEventListener('click', () => {
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li)
         listContainer.classList.add('check');
+
+
         let span = document.createElement('span');
         span.innerHTML = "x";
         li.appendChild(span);
+
+
+        // let priority = document.createElement('p');
+        // priority.innerHTML = "↑"
+        // li.appendChild(priority);
+        count++;
+
     }
+
     inputBox.value = ''; 
     saveTask();  
+    console.log(`total list is ${count}`);
+
 })
+
 
 
 listContainer.addEventListener('click' , (e)=>{
@@ -31,7 +43,21 @@ listContainer.addEventListener('click' , (e)=>{
     else if(e.target.tagName === "SPAN"){ 
         e.target.parentElement.remove();
         saveTask();
+        if(count === 0){
+            count = 0;
+        }
+        else{
+            count--;
+        }
     }
+    else if(e.target.tagName === "P"){
+        move();
+    }
+
+    else if(e.target.tagName != "LI"){
+        count = 0;
+    }
+
 })
 
 
@@ -45,7 +71,9 @@ function getTask(){
 
 getTask();
 
+function move(){
 
+}
 
 
 
