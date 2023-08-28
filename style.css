@@ -17,14 +17,23 @@
 
 
 
+header{
+    background-color: var(--pink);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+header img{
+    height: 2.5em;
+    top: -4px;
+}
 .heading{
     font-family: var(--primary-font);
     color: var(--maroon);
-    background-color: var(--pink);
     padding: 0.5rem;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
 
 section{
@@ -32,6 +41,8 @@ section{
     justify-content: center;
     position: relative;
     top:10rem;
+    /* background-color: #424242;
+    height: 88vh; */
 }
 
 .container{
@@ -154,6 +165,9 @@ ol li.check::before{
     body{
         width: 100%;
     }
+    .heading{
+        font-size: 32px;
+    }
     #toDoBox{
         width: 16rem;
     }  
@@ -168,6 +182,14 @@ ol li.check::before{
     ol li p{
         left: 19rem;
     }
+    header img{
+        height: 2rem;
+    }
+}
+@media(max-width : 410px){
+    .heading{
+        font-size: 30px;
+    }
 }
 
 
@@ -176,7 +198,7 @@ ol li.check::before{
         width: 100%;
     }
     .heading{
-        font-size: 28px;
+        font-size: 26px;
     }
 
     #toDoBox{
@@ -194,6 +216,9 @@ ol li.check::before{
         font-size: 15px;
         width: 240px;
     }
+    header img{
+        height: 1.8rem;
+    }
 }
 
 @media(max-width : 330px){
@@ -201,7 +226,7 @@ ol li.check::before{
         width: 100%;
     }
     .heading{
-        font-size: 26px;
+        font-size: 24px;
     }
     #toDoBox{
         width: 10rem;
@@ -217,4 +242,9 @@ ol li.check::before{
         font-size: 15px;
         width: 160px;
     }
+}
+
+
+.darkmode{
+    background-color: #202020;
 }
